@@ -17,11 +17,8 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            MealzAppTheme {
-                // Set up your UI here
-            }
-        }
+        setContentView(R.layout.activity_main)
+
         val rv:RecyclerView = findViewById(R.id.category_rv)
 
         // Initialize MealsAdapter
